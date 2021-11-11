@@ -1,1 +1,2 @@
 hello class
+Hello class 2
