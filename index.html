@@ -2,13 +2,114 @@
 <html>
   <head>
     <title>Demo HTML</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      /* h2 {
+        color: red;
+      }
+      .head1 {
+        color: yellow;
+      }
+      #head3 {
+        color: beige;
+      } */
+      table {
+        width: 100%;
+      }
+      tr:nth-child(even) {
+        background-color:rgb(80, 79, 75);
+      }
+    </style> 
   </head>
   <body>
-    <h1 style="font-size: 60px;">Heading 1</h1>
+    <h1 style="font-size: 60px;" class="head1">Heading 1</h1>
     <!-- <p>My first paragraph</p> -->
     <h2>Heading 2</h2>
-    <h3>heading 3</h3>
+    <h3 id="head3">heading 3</h3>
     <h4>heading 4</h4>
     <H5>Heading 5</H5>
+
+    <hr style="width: 50%; margin: 0;">
+    <!-- Multi line paragraph -->
+    <pre >
+      Xin chao cac ban
+      Toi ten la thinh
+    </pre>
+
+    <hr style="width: 50%; margin: 0;">
+    <!-- text style -->
+    <p><b>This bold text</b></p>
+    <p><i>This is italic text</i></p>
+    <p>Day la <sub>Subscript</sub></p>
+
+    <hr style="width: 50%; margin: 0;">
+    <!-- Hyperlinks -->
+    <a href="mailto:lvthinh@vnu.edu.vn" target="_blank" title="Email to sbd">Gửi mail</a>
+
+    <hr style="width: 50%; margin: 0;">
+    <!-- image -->
+    <!-- <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAQDYVM.img?h=498&w=780&m=6&q=60&o=f&l=f" alt="image" style="width: 700px; height: 500px"> -->
+
+    <hr style="width: 50%; margin: 0;">
+    <!-- table -->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Genger</th>
+        <th>DOB</th>
+      </tr>
+      <tr>
+        <td>Nguyen Van A</td>
+        <td>Male</td>
+        <td>00/00/0000</td>
+      </tr>
+      <tr>
+        <td>Nguyen Van B</td>
+        <td>Male</td>
+        <td>00/00/0000</td>
+      </tr>
+      <tr>
+        <td>Nguyen Van C</td>
+        <td>Male</td>
+        <td>00/00/0000</td>
+      </tr>
+      <tr>
+        <td>Nguyen Van D</td>
+        <td>Male</td>
+        <td>00/00/0000</td>
+      </tr>
+    </table>
+
+    <hr style="width: 50%; margin: 0;">
+
+    <ol>
+      <li>Coffee</li>
+      <li>Coca</li>
+    </ol>
+    <ul>
+      <li>Coffee</li>
+      <li>Coca</li>
+    </ul>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>This is coffee</dd>
+      <dt>Milk</dt>
+      <dd>This is milk</dd>
+    </dl>
+
+    <hr style="width: 50%; margin: 0;">
+    <form>
+      <label>Username:</label><br>
+      <input type="text" id="username" value="thinhlv"><br>
+      <label>Password:</label><br>
+      <input type="password" id="password"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr style="width: 50%; margin: 0;">
+    <video width="320" height="240" controls>
+      <source src="./example.mp4" type="video/mp4">
+    </video>
   </body>
 </html>
