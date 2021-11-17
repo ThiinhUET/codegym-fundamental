@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #7fedff;
+      min-block-size: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .align {
+      inline-size: 100%;
+      max-inline-size: 30rem;
+      background-color: #ffff;
+    }
+    #head{
+      background-color: #ff9800fc;
+      margin: 0.2em 0.1em 0.4em 0.1em;
+      text-align: center;
+    }
+    form {
+      width: 80%;
+      left: 10%;
+      position: relative;
+      display: grid;
+      gap: 0.875rem;
+    }
+    
+    label, .hobby {
+      display: flex;
+    }
+
+    .hobby>ul, .form-field>ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 10px;
+      color: yellowgreen;
+    }
+
+    .form-field {
+      display: flex;
+    }
+
+    .form-field >label {
+      text-align: end;
+      width: 20%;
+      justify-content: flex-end;
+      color: blue;
+    }
+
+    .form-field >input {
+      padding-left: 10px;
+    }
+
+    .btn-container {
+      width: 50%;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="align">
+    <h2 id="head">Đăng ký học viên</h2>
+    <form>
+      <div class="form-field">
+        <label>Họ và tên</label>
+        <ul>
+          <li><input type="text" name="name"><br></li>
+        </ul>
+      </div>
+      <div class="form-field">
+        <label>Ngày sinh</label>
+        <ul>
+          <li><input type="date" name="dob"><br></li>
+        </ul>
+      </div>
+
+      <div class="form-field">
+        <label>Giới tính</label>
+        <input type="radio" value="male" name="gender" />Nam
+        <input type="radio" value="female" name="gender" />Nữ<br>
+      </div>
+      
+      <div class="form-field">
+        <label>Địa chỉ</label>
+        <textarea rows="4"></textarea>
+      </div>
+
+      <div class="form-field">
+        <label>Lớp</label>
+        <select>
+          <option value="1">Lớp 1</option>
+          <option value="2">Lớp 2</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label>Email</label>
+        <ul>
+          <li><input type="text" name="email"><br></li>
+        </ul>
+      </div>
+
+      <div class="form-field">
+        <label>Điện thoại</label>
+        <ul>
+          <li><input type="text" name="dob"><br></li>
+        </ul>
+      </div>
+
+      <div class="form-field">
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại">
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
