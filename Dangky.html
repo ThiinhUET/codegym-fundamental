@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Đăng Ký </title>
+        <body bgcolor="white">
+            <form method="post" action="post">
+               <table border="0" align="Left" bgcolor="Khaki">
+                   <tr>
+                       <td colspan="2" bgcolor="MediumTurquoise">
+                        <font size="30" color="blue"> Đăng Ký Học Viên </font>
+                       </td>
+                   </tr>
+                   <tr>
+                   <td> <font color="blue">Họ Và Tên:</font></td>
+                   <td>
+                       <input type="text" name="yourname" size="30">
+                   </td>
+                   </tr> <br>
+                   <tr>
+                    <td><font color="blue">Ngày Sinh:</font></td>
+                    <td>
+                        <input type="date" name="date" size="30">
+                    </td>
+                    </tr> <br>
+                    <tr>
+                        <td><font color="blue">Giới tính:</font></td>
+                        <td>
+                            <label>
+                                <input type="radio" name="gioitinh" id="Nam"/> Nam
+                                <input type="radio" name="gioitinh" id="Nu"/> Nữ
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><font color="blue">Địa chỉ:</font></td>
+                        <td>
+                            <textarea cols="25" rows="3">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><font color="blue">Lớp:</font> </td>
+                        <td>
+                            <select name="class">
+                                <option value="Chonlop"> --Chọn Lớp--</option>
+                                <option value="lop10">Lớp 10</option>
+                                <option value="lop11">Lớp 11</option>
+                                <option value="lop12">Lớp 12</option>
+                            </select>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td><font color="blue">Email:</font></td>
+                        <td>
+                            <input type="email" name="email" size="30">
+                        </td>
+                    </tr> <br>
+                    <tr>
+                        <td><font color="blue">Số điện thoại:</font></td>
+                        <td>
+                            <input type="number" name="nb" size="30"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="submit" value="Đăng ký"/>   
+                            <input type="reset" name="reset" value="Nhập lại"/>                       
+                        </td>
+                    </tr>
+               </table>
+        </body>
+    </head>
+</html>
