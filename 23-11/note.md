@@ -38,49 +38,49 @@ Nội dung buổi trước:
   - Là gì ? : là một vòng đời của một biến.
   - Các loại scope: Function, Global, Block 
    
-   for( var i = 0; i < 10; i++) {
-     console.log("inside the loop", i);
-   }
-   console.log("outside the loop", i)
+  for( var i = 0; i < 10; i++) {
+    console.log("inside the loop", i);
+  }
+  console.log("outside the loop", i)
 
   - ### Function Scope:
     //code demo
 
-    function local() {
-      var number = 1;
-      console.log(number); // 1
-    }
-    console.log(number); // reference error
+  function local() {
+    var number = 1;
+    console.log(number); // 1
+  }
+  console.log(number); // reference error
 
   Khi khai báo một biến trong một hàm, biến đó chỉ được sử dụng cho hàm đó, không được sử dụng ở ngoài.
 
   - ### Global scope
 
-    var number = 1;
-    function local() {
-      console.log(number); // 1
-    }
-    console.log(number);  // 1
+  var number = 1;
+  function local() {
+    console.log(number); // 1
+  }
+  console.log(number);  // 1
 
   - ### Block scope
     Chỉ được ra đời khi từ khóa let xuất hiện.
-      for( let i = 0; i < 10; i++) {
-        console.log("inside the loop", i);
-      }
-      console.log("outside the loop", i)
+  for( let i = 0; i < 10; i++) {
+    console.log("inside the loop", i);
+  }
+  console.log("outside the loop", i)
 
   Tất cả các scopes trong js chỉ được tạo ra với function scope, các scope khác không được tạo ra trong các block statement.
     + var sẽ không có scope là block. Nếu var ở trong if, while, for, switch thì nó không tạo ra scope mới. 
     
-    if(true) {
-      let number = 1;
-      let number = 3; // error
+  if(true) {
+    let number = 1;
+    let number = 3; // error
 
-      var number_1 = 1;
-      var number_1 = 2; //number_1 = 2
-    }
+    var number_1 = 1;
+    var number_1 = 2; //number_1 = 2
+  }
 
-    console.log(number) //1
+  console.log(number) //1
 
     + var có thể khai báo lại biến. let không cho phép khai báo lại biến.
 
@@ -95,10 +95,10 @@ Ví dụ về let, var:
   có 2 cách sử:
     1. Thay "var i" thành "let i"
     2. sử IIFE
-      for( var i = 0; i < 10; i++){
-        (function(i){
-           setTimeout(function() {
-            console.log('count', i);
-          }, 3000);
-        }), (i);   
-      }
+  for( var i = 0; i < 10; i++){
+    (function(i){
+        setTimeout(function() {
+        console.log('count', i);
+      }, 3000);
+    }), (i);   
+  }
