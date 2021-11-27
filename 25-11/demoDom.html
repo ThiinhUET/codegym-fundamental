@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <!-- <input type="text" value="hello class 1" id="myInput">
+  <input type="text" value="hello class 2">
+  <input type="number" value=2 class="myInput3">
+  <input type="text" value="hello class 3" class="myInput3"> -->
+  <input id="username" placeholder="username" type="text" >
+  <input id="password" placeholder="password" type="password">
+  <button onclick="Login()">Login</button>
+  <div id="content"></div>
+  <script>
+    // let getElementId = document.getElementById("myInput");
+    // let inputElements = document.getElementsByTagName('input');
+    // let getElementClass = document.getElementsByClassName('myInput3');
+    // let queryByCss = document.querySelectorAll(".myInput3");
+    // let content1 = document.querySelector('#content1');
+    // let content2 = document.querySelector('#content2');
+    function Login() {
+      let username = document.getElementById("username").value;
+      let pass = document.getElementById("password").value;
+      let message = document.getElementById("content");
+      if(username === "thinh" && pass === "123456") {
+        message.innerHTML = "Đăng nhập thành công";
+      }
+      else {
+        message.innerHTML = "Đăng nhập không thành công";
+      }
+
+    }
+  </script>
+</body>
+</html>

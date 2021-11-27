@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div id="div1">
+    <p id="p1">Đoạn văn thứ nhất.</p> 
+    <p id="p2">Đoạn văn thứ hai.</p>
+  </div>
+  <script>
+    // let p = document.createElement("p");
+    // p.innerHTML = "hello class";
+    
+    // document.getElementsByTagName("body")[0].appendChild(p);
+    const p3 = document.createElement("p"); 
+    p3.innerHTML = "Đoạn văn thứ ba.";
+
+    const div = document.getElementById("div1");
+    const p1 = document.getElementById("p1");
+    // p1.remove();
+    div.removeChild(p1);
+
+  </script>
+</body>
+</html>
