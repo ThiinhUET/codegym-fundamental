@@ -1,0 +1,97 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="./calculator.css">
+      <!-- <script src="./calculator.js"></script> -->
+      <style>
+        .calculator {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+      }
+
+      .calculator-screen {
+        width: 100%;
+        font-size: 5rem;
+        height: 80px;
+        background-color: #252525;
+        color: #fff;
+        padding-right: 20px;
+        padding-left: 10px;
+      }
+
+      button {
+        height: 60px;
+        background-color: #fff;
+        border-radius: 3px;
+        border: 1px solid #c4c4c4;
+        font-size: 2rem;
+        color: #337cac;
+      }
+
+      button:hover {
+        background-color: #eaeaea;
+      }
+
+      .calculator-keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="calculator">
+
+        <input id="result" type="text" class="calculator-screen" value="" disabled />
+        
+        <div class="calculator-keys">
+          
+          <button type="button" value="1" onclick="dis('1')">1</button>
+          <button type="button" value="2" onclick="dis('2')">2</button>
+          <button type="button" value="3" onclick="dis('3')">3</button>
+          <button type="button" value="+" onclick="dis('+')">+</button>
+
+          <button type="button" value="4" onclick="dis('4')">4</button>
+          <button type="button" value="5" onclick="dis('5')">5</button>
+          <button type="button" value="6" onclick="dis('6')">6</button>
+          <button type="button" value="-" onclick="dis('-')">-</button>
+      
+          <button type="button" value="7" onclick="dis('7')">7</button>
+          <button type="button" value="8" onclick="dis('8')">8</button>
+          <button type="button" value="9" onclick="dis('9')">9</button>
+          <button type="button" value="*" onclick="dis('*')">&times;</button>
+    
+          <button type="button" value="all-clear" onclick="clr()">AC</button>
+          <button type="button" value="0" onclick="dis('0')">0</button>
+          <button type="button" value="=" onclick="solve()">=</button>
+          <button type="button" value="/" onclick="dis('/')">&divide;</button>
+        </div>
+
+        <script>
+         function dis(val)
+         {
+             document.getElementById("result").value+=val;
+         }
+           
+         function solve()
+         {
+             let x = document.getElementById("result").value
+            //  Logic Để tính đáp án nếu ko dùng eval
+             let y = eval(x)
+             document.getElementById("result").value = y;
+         }
+           
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+          
+        </script>
+      </div>
+    </body>
+</html>
