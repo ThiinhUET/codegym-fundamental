@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <input type="number" onchange="checkEven()" > -->
+  <script>
+    /*
+    Demo 1
+    let radius = parseFloat(prompt("Circle Radius"));
+    let area = 0;
+    
+    if(radius >= 0) {
+      area = Math.pow(radius, 2) * Math.PI;
+      document.write(area);
+    }
+    */
+
+    // Demo 2
+    // function checkEven() {
+    //   let myNumber = document.getElementsByTagName("input").value;
+    //   if( myNumber % 2 === 0 ) {
+    //     document.write("Số chẵn");
+    //   }
+    //   else {
+    //     document.write("Số lẻ");
+    //   }
+    // }
+
+    /* 
+    Demo if lồng nhau 
+    let a = parseFloat (prompt("Number số thứ nhất"));
+    let b = parseFloat ( prompt("Number số thứ 2"));
+    let c = parseFloat ( prompt("Number số thú 3"));
+
+    if(a>b){
+        if(a>c){
+            alert("a là số lớn nhất");
+        }
+        else{
+            alert("c là số lớn nhất");
+        }
+    }
+    else{
+        if(b>c){
+            alert("b là số lớn nhất");
+
+        }
+        else{
+            alert("c là số lớn nhất");
+        }
+    }
+    */
+
+    let grade = parseFloat (prompt("Nhập số điểm"));
+    // if( grade >= 90) {
+    //   document.write("A")
+    // }
+    // else if( grade >= 80) {
+    //   document.write("B")
+    // }
+    // else if( grade >= 70) {
+    //   document.write("C")
+    // }
+    // else if( grade >= 60) {
+    //   document.write("D")
+    // }
+    // else {
+    //   document.write("F");
+    // }
+
+    switch(true){
+      case (grade > 90):
+        document.write("A");
+        break;
+      case ((grade > 80) && (grade <= 90)):
+        document.write("B");
+        break;
+      case 70:
+        // document.write("C");
+        // break;
+      case 60:
+        document.write("Giỏi");
+        break;
+      default:
+        document.write("Dốt");
+        break;
+    }
+  </script>
+</body>
+</html>
+
